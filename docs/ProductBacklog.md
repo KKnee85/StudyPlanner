@@ -8,4 +8,4 @@
 | PB-04 | [FR4 Scheduling](RequirementsSpecification.md) |  | High |
 | PB-05 | [FR5 Calendar View](RequirementsSpecification.md) |  | High |
 | PB-06 | [FR6 Notifications](RequirementsSpecification.md) |  | Med |
-| PB-07 | [FR7 Resource List](RequirementsSpecification.md) |  | Low |
+| PB-07 | [FR7 Resource List](RequirementsSpecification.md#fr7-resource-list) |  | Low |
