@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/androidx/lifecycle/lifecycle-viewmodel-compose-desktop/2.11.0/lifecycle-viewmodel-compose-desktop-2.11.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/androidx/lifecycle/lifecycle-viewmodel-compose-desktop/2.11.0/lifecycle-viewmodel-compose-desktop-2.11.0.jar": "size 5005 mtime 2026-10-06T18:24:31.105041992Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/lifecycle-viewmodel-compose-desktop-2.11.0.jar-ce0498be95df30f0c1f3f961f05b96c6e0f07f18788615e038927fd7e3e69c9d.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/lifecycle-viewmodel-compose-desktop-2.11.0.jar-ce0498be95df30f0c1f3f961f05b96c6e0f07f18788615e038927fd7e3e69c9d.abi": "size 4 mtime 2026-10-06T18:25:01.807739362Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

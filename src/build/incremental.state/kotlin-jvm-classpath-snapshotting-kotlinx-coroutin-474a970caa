@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-swing/1.11.0/kotlinx-coroutines-swing-1.11.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-swing/1.11.0/kotlinx-coroutines-swing-1.11.0.jar": "size 8825 mtime 2026-10-06T18:24:31.379039245Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/kotlinx-coroutines-swing-1.11.0.jar-408201a10ad503e38326f72cf18df23caee62c6a12475bb791980b6d7634f525.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/kotlinx-coroutines-swing-1.11.0.jar-408201a10ad503e38326f72cf18df23caee62c6a12475bb791980b6d7634f525.abi": "size 1499 mtime 2026-10-06T18:25:06.850422802Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

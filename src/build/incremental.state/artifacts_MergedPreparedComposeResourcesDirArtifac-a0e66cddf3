@@ -1,0 +1,14 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "%outputs%": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/MergedPreparedComposeResourcesDirArtifact/desktopAppjvm",
+        "packagingDir": "\"composeResources/desktopapp.generated.resources/\""
+    },
+    "inputFiles": [],
+    "inputFilesState": {},
+    "outputValues": {},
+    "outputFiles": [],
+    "outputFilesState": {},
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

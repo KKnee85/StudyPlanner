@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/ui/ui-geometry-desktop/1.12.1/ui-geometry-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/ui/ui-geometry-desktop/1.12.1/ui-geometry-desktop-1.12.1.jar": "size 61135 mtime 2026-10-06T18:24:32.207030945Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/ui-geometry-desktop-1.12.1.jar-8edb499980c861a88acffcb08fe4b2a4c7853f003027f74267c740c916ace724.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/ui-geometry-desktop-1.12.1.jar-8edb499980c861a88acffcb08fe4b2a4c7853f003027f74267c740c916ace724.abi": "size 5453 mtime 2026-10-06T18:25:01.953084692Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

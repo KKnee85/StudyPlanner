@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/resources-output"
+    ],
+    "inputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/resources-output/composeResources/com.swe.studyplanner.resources/drawable/compose-multiplatform.xml": "size 1742 mtime 2026-10-06T18:25:41.501427118Z"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/desktopApp-resources-output-c296b5bed9fcd787424acad43dab915be36698ba473b2fd848469d6284caaab0.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/desktopApp-resources-output-c296b5bed9fcd787424acad43dab915be36698ba473b2fd848469d6284caaab0.abi": "size 4 mtime 2026-10-06T18:25:41.579038894Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

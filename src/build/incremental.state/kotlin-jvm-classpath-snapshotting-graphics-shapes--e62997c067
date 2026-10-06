@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/androidx/graphics/graphics-shapes-desktop/1.1.0/graphics-shapes-desktop-1.1.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/androidx/graphics/graphics-shapes-desktop/1.1.0/graphics-shapes-desktop-1.1.0.jar": "size 130657 mtime 2026-10-06T18:24:31.615036878Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/graphics-shapes-desktop-1.1.0.jar-213c55fb5365763b069ef342ae694532be2f64167247fd0e7909cb767654470e.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/graphics-shapes-desktop-1.1.0.jar-213c55fb5365763b069ef342ae694532be2f64167247fd0e7909cb767654470e.abi": "size 14049 mtime 2026-10-06T18:25:01.934738132Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

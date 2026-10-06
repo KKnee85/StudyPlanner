@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/foundation/foundation-desktop/1.12.1/foundation-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/foundation/foundation-desktop/1.12.1/foundation-desktop-1.12.1.jar": "size 4741167 mtime 2026-10-06T18:24:32.451028501Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/foundation-desktop-1.12.1.jar-cdb5ff75807ec6ff6f11d40e3f2e8e473863363a6682592c5016bfd51c2c53b6.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/foundation-desktop-1.12.1.jar-cdb5ff75807ec6ff6f11d40e3f2e8e473863363a6682592c5016bfd51c2c53b6.abi": "size 629356 mtime 2026-10-06T18:25:02.517732489Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

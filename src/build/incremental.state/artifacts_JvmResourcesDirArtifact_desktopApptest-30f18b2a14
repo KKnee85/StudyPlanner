@@ -1,0 +1,13 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "%outputs%": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/JvmResourcesDirArtifact/desktopApptest"
+    },
+    "inputFiles": [],
+    "inputFilesState": {},
+    "outputValues": {},
+    "outputFiles": [],
+    "outputFilesState": {},
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

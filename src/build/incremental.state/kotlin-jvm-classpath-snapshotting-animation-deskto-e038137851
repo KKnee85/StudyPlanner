@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/animation/animation-desktop/1.12.1/animation-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/animation/animation-desktop/1.12.1/animation-desktop-1.12.1.jar": "size 463865 mtime 2026-10-06T18:24:30.756045495Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/animation-desktop-1.12.1.jar-e7f939cf01c4d218cd9234d9411c0b3ab16eda210f134b549c836807eb71481e.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/animation-desktop-1.12.1.jar-e7f939cf01c4d218cd9234d9411c0b3ab16eda210f134b549c836807eb71481e.abi": "size 51281 mtime 2026-10-06T18:25:02.045737056Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/material/material-desktop/1.12.1/material-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/material/material-desktop/1.12.1/material-desktop-1.12.1.jar": "size 1474003 mtime 2026-10-06T18:24:32.685026157Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/material-desktop-1.12.1.jar-6b5b5845ab0f269ed15edbbb42bd91e2bebec76035267dcee350b7db256cbce6.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/material-desktop-1.12.1.jar-6b5b5845ab0f269ed15edbbb42bd91e2bebec76035267dcee350b7db256cbce6.abi": "size 108050 mtime 2026-10-06T18:25:06.946177092Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

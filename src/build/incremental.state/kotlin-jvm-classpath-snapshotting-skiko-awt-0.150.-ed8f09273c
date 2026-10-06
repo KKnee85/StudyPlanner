@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/skiko/skiko-awt/0.150.1/skiko-awt-0.150.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/skiko/skiko-awt/0.150.1/skiko-awt-0.150.1.jar": "size 1261676 mtime 2026-10-06T18:24:31.92003382Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/skiko-awt-0.150.1.jar-7dc6726589ca12d30e681d7efc8c4ea82513df080ffe500011ab729d34c5434e.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/skiko-awt-0.150.1.jar-7dc6726589ca12d30e681d7efc8c4ea82513df080ffe500011ab729d34c5434e.abi": "size 168965 mtime 2026-10-06T18:25:02.314734453Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

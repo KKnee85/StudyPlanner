@@ -1,0 +1,13 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-09-30)
+running on Linux 7.2.8 jvm arch amd64
+
+00:22.259 INFO  :shared:compileJvm        Downloader                Downloading https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz to /home/mark/.cache/JetBrains/Kotlin/download.cache/5cadb5bf88-OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz
+00:37.146 INFO  :shared:compileJvm        Slf4jExtensionsKt         Compiling module 'shared' for platform 'jvm'...
+00:48.683 INFO  :shared:compileJvm        KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:52.283 INFO  :shared:compileJvm        MessagesKt                Compilation successful for shared [jvm]
+00:52.312 INFO  :shared:compileJvmTest    Slf4jExtensionsKt         Compiling module 'shared' for platform 'jvm'...
+00:52.312 INFO  :desktopApp:compileJvm    Slf4jExtensionsKt         Compiling module 'desktopApp' for platform 'jvm'...
+00:52.423 INFO  :shared:compileJvmTest    KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:52.425 INFO  :desktopApp:compileJvm    KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:53.050 INFO  :shared:compileJvmTest    MessagesKt                Compilation successful for shared [jvm tests]
+00:53.099 INFO  :desktopApp:compileJvm    MessagesKt                Compilation successful for desktopApp [jvm]

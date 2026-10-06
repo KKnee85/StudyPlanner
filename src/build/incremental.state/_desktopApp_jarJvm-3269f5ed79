@@ -1,0 +1,28 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "inputDirsDestPaths": "[., .]",
+        "jarConfig": "{\"mainClassFqn\":\"com.swe.studyplanner.MainKt\"}",
+        "outputJarPath": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_desktopApp_jarJvm/desktopApp-jvm.jar"
+    },
+    "inputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/kotlin-output",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/resources-output"
+    ],
+    "inputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/kotlin-output/META-INF/desktopApp.kotlin_module": "size 56 mtime 2026-10-06T18:25:07.578138259Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/kotlin-output/com/swe/studyplanner/ComposableSingletons$MainKt$lambda$-716796637$1$1$1.class": "size 1280 mtime 2026-10-06T18:25:07.577910314Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/kotlin-output/com/swe/studyplanner/ComposableSingletons$MainKt.class": "size 6944 mtime 2026-10-06T18:25:07.577777045Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/kotlin-output/com/swe/studyplanner/MainKt.class": "size 884 mtime 2026-10-06T18:25:07.577969063Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/desktopAppjvm/resources-output/logback.xml": "size 331 mtime 2026-10-06T18:25:41.635586588Z"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_desktopApp_jarJvm/desktopApp-jvm.jar"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_desktopApp_jarJvm/desktopApp-jvm.jar": "size 5958 mtime 2026-10-06T18:35:05.097293709Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

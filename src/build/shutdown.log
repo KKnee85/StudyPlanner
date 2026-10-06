@@ -1,0 +1,5 @@
+Shutting down (DevTools '159902')
+Shutdown actions registered: 1
+Shutdown actions completed: 1, failed: 0
+Shutdown duration: 2ms
+ | 16:04:58.113 | DevTools | Info  | ShutdownKt | shutdown | Shutting down...

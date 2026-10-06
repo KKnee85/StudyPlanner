@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "%outputs%": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/preparedComposeResources"
+    },
+    "inputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/shared/composeResources"
+    ],
+    "inputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/shared/composeResources/drawable/compose-multiplatform.xml": "size 1742 mtime 2026-10-06T18:19:00.527309352Z"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/preparedComposeResources"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/preparedComposeResources/composeResources/com.swe.studyplanner.resources/drawable/compose-multiplatform.xml": "size 1742 mtime 2026-10-06T18:24:15.98614734Z"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

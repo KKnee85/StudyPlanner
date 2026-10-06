@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/ch/qos/logback/logback-classic/1.6.2/logback-classic-1.6.2.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/ch/qos/logback/logback-classic/1.6.2/logback-classic-1.6.2.jar": "size 292401 mtime 2026-10-06T18:24:33.220020801Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/logback-classic-1.6.2.jar-0775a5af98b2f50656252aae9b1b621c2c1746c7535e283a7f950cf85cebd474.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/logback-classic-1.6.2.jar-0775a5af98b2f50656252aae9b1b621c2c1746c7535e283a7f950cf85cebd474.abi": "size 58731 mtime 2026-10-06T18:25:06.868211494Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

@@ -1,0 +1,7 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-09-30)
+running on Linux 7.2.8 jvm arch amd64
+
+00:01.712 INFO  :shared:compileJvm        Slf4jExtensionsKt         Compiling module 'shared' for platform 'jvm'...
+00:02.751 INFO  :desktopApp:compileJvm    Slf4jExtensionsKt         Compiling module 'desktopApp' for platform 'jvm'...
+00:03.141 INFO  :desktopApp:hotRunJvm     Downloader                Downloading https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-x64-b635.70.tar.gz to /home/mark/.cache/JetBrains/Kotlin/download.cache/32578e5ff5-jbrsdk-25.0.4.1-linux-x64-b635.70.tar.gz
+00:40.691 ERROR                           MainKt                    Task ':desktopApp:hotRunJvm' failed: Process failed with exit code 1

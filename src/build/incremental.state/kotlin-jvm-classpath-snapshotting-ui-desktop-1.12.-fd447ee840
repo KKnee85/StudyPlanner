@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/ui/ui-desktop/1.12.1/ui-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/compose/ui/ui-desktop/1.12.1/ui-desktop-1.12.1.jar": "size 3715560 mtime 2026-10-06T18:24:32.732025686Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/ui-desktop-1.12.1.jar-84ff18df284fd607d7569616f03679b241fb5eb9d6bd3630a75f503858822f5a.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/ui-desktop-1.12.1.jar-84ff18df284fd607d7569616f03679b241fb5eb9d6bd3630a75f503858822f5a.abi": "size 490253 mtime 2026-10-06T18:25:02.487732779Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

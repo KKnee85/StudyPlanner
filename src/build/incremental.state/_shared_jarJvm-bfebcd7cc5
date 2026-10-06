@@ -1,0 +1,40 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "inputDirsDestPaths": "[., .]",
+        "jarConfig": "{}",
+        "outputJarPath": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_shared_jarJvm/shared-jvm.jar"
+    },
+    "inputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/resources-output"
+    ],
+    "inputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/META-INF/shared.kotlin_module": "size 153 mtime 2026-10-06T18:25:06.648418312Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/AppKt.class": "size 3274 mtime 2026-10-06T18:25:06.648108954Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/ComposableSingletons$AppKt.class": "size 20971 mtime 2026-10-06T18:25:06.64806353Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/Greeting.class": "size 1548 mtime 2026-10-06T18:25:06.648139942Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/JVMPlatform.class": "size 1491 mtime 2026-10-06T18:25:06.647738703Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/Platform.class": "size 522 mtime 2026-10-06T18:25:06.648162895Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/Platform_jvmKt.class": "size 650 mtime 2026-10-06T18:25:06.647770593Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/ActualResourceCollectorsKt.class": "size 4872 mtime 2026-10-06T18:25:06.647653174Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/CommonDrawable0.class": "size 1891 mtime 2026-10-06T18:25:06.647802062Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Drawable0_commonKt.class": "size 2563 mtime 2026-10-06T18:25:06.64783356Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res$array.class": "size 939 mtime 2026-10-06T18:25:06.647946Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res$drawable.class": "size 948 mtime 2026-10-06T18:25:06.647891649Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res$font.class": "size 936 mtime 2026-10-06T18:25:06.647998378Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res$plurals.class": "size 945 mtime 2026-10-06T18:25:06.64797276Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res$string.class": "size 942 mtime 2026-10-06T18:25:06.64791899Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/kotlin-output/com/swe/studyplanner/resources/Res.class": "size 2462 mtime 2026-10-06T18:25:06.64786544Z",
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/artifacts/CompiledJvmArtifact/sharedjvm/resources-output/composeResources/com.swe.studyplanner.resources/drawable/compose-multiplatform.xml": "size 1742 mtime 2026-10-06T18:25:41.501427118Z"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_shared_jarJvm/shared-jvm.jar"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/tasks/_shared_jarJvm/shared-jvm.jar": "size 25624 mtime 2026-10-06T18:35:05.086293773Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

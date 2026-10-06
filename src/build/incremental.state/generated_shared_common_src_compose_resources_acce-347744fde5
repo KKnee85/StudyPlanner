@@ -1,0 +1,25 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "%outputs%": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/src/compose/resources/accessors",
+        "makeAccessorsPublic": "true",
+        "packageName": "\"com.swe.studyplanner.resources\"",
+        "packagingDir": "\"composeResources/com.swe.studyplanner.resources/\"",
+        "resClassName": "\"Res\""
+    },
+    "inputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/preparedComposeResources"
+    ],
+    "inputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/preparedComposeResources/composeResources/com.swe.studyplanner.resources/drawable/compose-multiplatform.xml": "size 1742 mtime 2026-10-06T18:24:15.98614734Z"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/src/compose/resources/accessors"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/shared/common/src/compose/resources/accessors/com/swe/studyplanner/resources/Drawable0.common.kt": "size 1067 mtime 2026-10-06T18:25:40.398373577Z"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

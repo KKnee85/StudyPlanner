@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/androidx/compose/runtime/runtime-retain-desktop/1.12.1/runtime-retain-desktop-1.12.1.jar"
+    ],
+    "inputFilesState": {
+        "/home/mark/.cache/JetBrains/Kotlin/.m2.cache/androidx/compose/runtime/runtime-retain-desktop/1.12.1/runtime-retain-desktop-1.12.1.jar": "size 53421 mtime 2026-10-06T18:24:32.231030704Z mode 420 owner mark group users"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/runtime-retain-desktop-1.12.1.jar-581aa0a1d899d8fa10b2b8d4bba4f598811a835456915b1eabe5b5458c7edccd.abi"
+    ],
+    "outputFilesState": {
+        "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/ic-cache/classpath-snapshots/runtime-retain-desktop-1.12.1.jar-581aa0a1d899d8fa10b2b8d4bba4f598811a835456915b1eabe5b5458c7edccd.abi": "size 7882 mtime 2026-10-06T18:25:01.921738258Z mode 420 owner mark group users"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

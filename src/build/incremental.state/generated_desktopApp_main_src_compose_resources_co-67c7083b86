@@ -1,0 +1,18 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "%outputs%": "/home/mark/Nextcloud/Documents/School/2026 - Fall/SWE/tmp/build/generated/desktopApp/main/src/compose/resources/commonResClass",
+        "makeAccessorsPublic": "false",
+        "packageName": "\"desktopapp.generated.resources\"",
+        "packagingDir": "\"composeResources/desktopapp.generated.resources/\"",
+        "resClassName": "\"Res\"",
+        "shouldGenerateCode": "false"
+    },
+    "inputFiles": [],
+    "inputFilesState": {},
+    "outputValues": {},
+    "outputFiles": [],
+    "outputFilesState": {},
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}
