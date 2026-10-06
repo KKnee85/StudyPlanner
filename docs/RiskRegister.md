@@ -31,7 +31,7 @@
 
 | Date | Changes Made | Updated By |
 |--------|-------------|------------|
-| YYYY-MM-DD | Initial risk register created. | Team |
+| 2026-10-06 | Initial risk register created. | Team |
 
 
 ## Lessons Learned
