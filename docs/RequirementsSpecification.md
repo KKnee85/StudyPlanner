@@ -4,7 +4,7 @@
 ### FR1 Class Creation
 Users shall be able to create class groups for defining schedule blocks
 ### FR2 Scheduling
-Users shall be able to schedule study blocks, due dates, and test times with options to associate each to 1 or more classes
+Users shall be able to schedule study blocks, due dates, and test times with options to associate each to 0 or more classes. Scheduled blocks must have configurable titles, time slots, and notification settings. Scheduling conflicts must be automatically recognized producing a prompt to update or ignore.  
 ### FR3 Calendar View
 Users shall be able to view all scheduled events in an automatically updated calendar format. Each scheduled block will be interact-able to update time tables and leave notes. 
 ### FR4 Notifications
