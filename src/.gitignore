@@ -1,0 +1,9 @@
+# Build output
+build/
+**/build/
+
+# Kotlin and IDE files
+.kotlin/
+.idea/
+*.iml
+
