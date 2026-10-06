@@ -8,7 +8,7 @@ Users shall be able to schedule study blocks, due dates, and test times with opt
 ### FR3 Calendar View
 Users shall be able to view all scheduled events in an automatically updated calendar format. Each scheduled block will be interact-able to update time tables and leave notes. 
 ### FR4 Notifications
-User shall be able to schedule notification reminders leading up to and during scheduled blocks
+The system will automatically notify users of upcoming due dates and test times. Users shall be able to schedule and configure automatic notification reminders leading up to and during scheduled blocks
 ### FR5 Resource List
 Students shall be able to store links and files and attach them to 1 or more classes. Resources must be accessible from their own dedicated menu and from calendar time block that share any associated classes. 
 ## Non-Functional Requirements
@@ -17,7 +17,7 @@ A new user must be able to allocate a time block within a maximum of 3 menus and
 ### NFR2 Reliability
 Scheduled time blocks must be non-volatile and accessible at all times with multiple layers of redundancy 
 ### NFR3 Performance
-Calendar with all scheduled blocks must load sudo-simultaneously with negligible load times <1s
+Calendar with all scheduled blocks must load pseudo-simultaneously with negligible load times <1s
 ### NFR4 Maintainability
 Software updates must ship with zero user downtime
 ### NFR5 Security
