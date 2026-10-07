@@ -40,7 +40,7 @@ This project follows Scrum practices using:
 - /test       Test code
 
 <pre>
-CarPoolManager/
+StudyPlanner/
 │
 ├── README.md
 ├── docs
