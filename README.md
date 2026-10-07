@@ -43,28 +43,39 @@ This project follows Scrum practices using:
 CarPoolManager/
 │
 ├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── src/
-│   ├── main/
-│   ├── test/
-│   └── resources/
-│
-├── docs/
-│   ├── ProductVision.md
-│   ├── AgileSRS.md
-│   ├── ProductBacklog.md
-│   ├── Sprint1Planning.md
-│   ├── Sprint1Review.md
-│   ├── Sprint1Retrospective.md
-│   ├── Sprint2Planning.md
-│   ├── Sprint2Review.md
-│   ├── Sprint2Retrospective.md
-│   ├── Sprint3Planning.md
-│   ├── Sprint3Review.md
-│   ├── Sprint3Retrospective.md
-│   ├── Sprint4Planning.md
-│   ├── Sprint4Review.md
-│   ├── Sprint4Retrospective.md
-│   └── Architecture.md
+├── docs
+│   ├── ProductBacklog.md
+│   ├── ProductVision.md
+│   ├── RequirementsSpecification.md
+│   ├── RiskRegister.md
+│   └── Sprint1
+│       ├── Planning.md
+│       ├── Retrospective.md
+│       └── Review.md
+└── src
+    ├── kotlin
+    ├── kotlin.bat
+    ├── libs.versions.toml
+    ├── project.yaml
+    ├── README.md
+    ├── build
+    │   ├── hot-reload-app.chr.log
+    │   ├── shutdown.log
+    │   ├── artifacts
+    │   ├── generated
+    │   ├── ic-cache
+    │   ├── incremental.state
+    │   ├── logs
+    │   ├── tasks
+    │   └── temp
+    ├── desktopApp
+    │   ├── module.yaml
+    │   ├── resources
+    │   └── src
+    └── shared
+        ├── module.yaml
+        ├── composeResources
+        ├── src
+        ├── src@jvm
+        ├── test
+        └── test@jvm
