@@ -9,7 +9,7 @@ Our vision is to create a user friendly calendar based study planner intended to
 
 ## Stakeholder Analysis 
 
-This application will be used by students at all levels of study for tracking due dates and scheduling time blocks in which to complete work or study. Students could import their general-purpose calendar to keep track of extracurricular activities, holidays, and planned breaks. 
+This application will be used by students looking to manage time more efficiently and organize their academic workload by scheduling out their study times and deadlines. This application will focus on the needs students, however, it may be used by many stakeholders as a general purpose scheduling tool.  
 
 ## Core Features 
 
