@@ -24,7 +24,10 @@
 
 | Risk ID | Category | Risk Description | Probability | Impact | Mitigation Strategy | Owner | Status |
 |----------|------------|-----------------|-------------|---------|---------------------|--------|---------|
-| R-01 |  |  |  |  |  |  |  |
+| R-01 | Technical | Team has limited experience with kotlin multiplatform | H | H | Review documentation and build a prototype before implementation begins. | Team | Open |
+| R-02 | Technical | Code written by different team members may not work together correctly or may cause merge conflicts. | M | H | Create standard syntax and practice abstraction | Team | Open |
+| R-03 | Planning | Tasks may not be divided effectively, or important tasks may be overlooked until late in the semester. | M | H | Upkeep product backlog with regular updates to prioritization associated with functional requirements and user stories | Team | Open |
+| R-04 | Scope | Project requirements expand beyond available time. | M | H | Prioritize backlog items and defer lower-priority features. | Team | Open |
 
 
 ## Risk Review History
@@ -32,6 +35,7 @@
 | Date | Changes Made | Updated By |
 |--------|-------------|------------|
 | 2026-10-06 | Initial risk register created. | Team |
+| 2026-10-07 | Populated with potential risks. | Evan |
 
 
 ## Lessons Learned
