@@ -60,7 +60,23 @@ So that **my class times are saved and visible in the calendar with the relevant
 - User can enter class ID
 - User can enter class times and dates
 
-# US-04 Schedule Time Blocks
+# US-04 Update Classes
+
+As a **student**,
+
+I want to **update my class schedule**,
+
+So that **as I complete classes, drop classes, and take new classes my class list remains accurate**
+
+## Acceptance Criteria
+
+- User can delete classes from the class list
+- User is prompted for confirmation before deletion
+- User can update class times and dates
+- User can add additional classes to class list
+- System automatically handles updates to calendar based on class updates
+
+# US-05 Schedule Time Blocks
 
 As a **student**,
 
@@ -75,7 +91,7 @@ So that **my calendar is propagated with my daily schedule including study times
 - User can link class or classes to event
 - User can designate if event is single time or repeating weekly/bi-weekly ect
 
-# US-05 Schedule Due Dates
+# US-06 Schedule Due Dates
 
 As a **student**,
 
@@ -89,7 +105,7 @@ So that **my calendar is propagated with my deadlines**
 - Due date creates a visible indicator on calendar view
 - Due dates can be assigned a class
 
-# US-06 Receive Conflict Notification
+# US-07 Receive Conflict Notification
 
 As a **student**,
 
@@ -103,7 +119,7 @@ So that **I never double book myself to multiple commitments**
 - System must prompt user if they would like to update schedule to accomodate
 - System must generate automated time suggestion with no conflicts
 
-# US-07 View My Calendar
+# US-08 View My Calendar
 
 As a **student**,
 
@@ -117,7 +133,7 @@ So that **I can see a visual representation of my scheduled commitments**
 - Calendar will be populated with blocks representing scheduled times
 - Calendar blocks will display relevant information such as title and time period
 
-# US-08 View Block Details
+# US-09 View Block Details
 
 As a **student**,
 
@@ -130,11 +146,11 @@ So that **I can see all linked classes, tests times, and notes**
 - Calendar blocks are interact-able with unique sub menu
 - Sub menu details linked classes, resources, notes, and upcoming test/deadlines of linked classes
 
-# US-09 Update Block Details
+# US-10 Update Block Details
 
 As a **student**,
 
-I want to **Update details associated with a time block**,
+I want to **update details associated with a time block**,
 
 So that **I can adjust for changes or fix mistakes**
 
@@ -145,4 +161,81 @@ So that **I can adjust for changes or fix mistakes**
 - Time range and dates may be updated
 - Classes may be linked or removed from a time block
 - Time block may be fully deleted.
+
+# US-11 Update Block Details
+
+As a **student**,
+
+I want to **receive notifications approaching and at due dates**,
+
+So that **I can be reminded of important turn ins**
+
+##  Acceptance Criteria
+
+- User will be prompted to enable notifications
+- User will be able to toggle notifications overall and for individual items
+- If notifications are enabled, scheduled due dates will have auto configured notification settings
+- Users will be able to adjust reminder intervals for specific deadlines, (1week, 1day, 1hour, etc)
+- Notifications will be updated should due date be changed or deleted
+
+# US-12 Save a resource
+
+As a **student**,
+
+I want to **save links and files in a resource list**,
+
+So that **I can easily access study materials**
+
+##  Acceptance Criteria
+
+- User can save links and upload files
+- User may name each link or file option
+- Links and files are saved and accessible from a dedicated resources menu
+- User can open links and files from the resources menu
+
+
+# US-13 Associate resources with classes
+
+As a **student**,
+
+I want to **associate a resource with one or more classes**,
+
+So that **I can organize study materials**
+
+##  Acceptance Criteria
+
+- User can associate a resource with zero or more classes
+- User may sort the resource list based on associated classes
+- Resources may appear more than once in the resource list based on sorting options
+- Class associations are saved
+
+# US-14 Access resources from calendar block
+
+As a **student**,
+
+I want to **access the resources associated with the classes linked to a calendar block**,
+
+So that **I can quickly access useful study materials while I'm studying**
+
+##  Acceptance Criteria
+
+- User can access associated resources when calendar block is selected
+- Resources for all classes associated to a block are displayed
+- Blocks with no associated classes do not display resources
+
+# US-15 Update resource list
+
+As a **student**,
+
+I want to **update my list of resources**,
+
+So that **I can add. remove, or reorganize my study materials**
+
+##  Acceptance Criteria
+
+- User can edit a resource's title, link, file, or class associations
+- User can removed resources from the list
+- Deleted resources are removed from all class associations and resource access points 
+
+
 
