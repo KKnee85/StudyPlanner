@@ -162,7 +162,7 @@ So that **I can adjust for changes or fix mistakes**
 - Classes may be linked or removed from a time block
 - Time block may be fully deleted.
 
-# US-11 Update Block Details
+# US-11 Receive Due Date Notifications
 
 As a **student**,
 
