@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="ImyR9aUsDC7EFtmdqyLf">
+    <mxGraphModel dx="1269" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="410" width="320" x="410" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Study Planner - Resources" vertex="1">
+          <mxGeometry height="30" width="160" x="490" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;" value="Student" vertex="1">
+          <mxGeometry height="60" width="30" x="290" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Save a Resource" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7hk68kSLVIXMhWaGcpIR-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="370" as="sourcePoint" />
+            <mxPoint x="620" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7hk68kSLVIXMhWaGcpIR-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="370" as="sourcePoint" />
+            <mxPoint x="510" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Associate Resources with Classes" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Access Resources from Calendar Block" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7hk68kSLVIXMhWaGcpIR-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="370" as="sourcePoint" />
+            <mxPoint x="410" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-20" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;labelPerimeter=1;" value="Calendar" vertex="1">
+          <mxGeometry height="60" width="30" x="790" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-21" edge="1" parent="1" source="7hk68kSLVIXMhWaGcpIR-11" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="7hk68kSLVIXMhWaGcpIR-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="420" as="sourcePoint" />
+            <mxPoint x="560" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Update Resource List" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="7hk68kSLVIXMhWaGcpIR-23" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7hk68kSLVIXMhWaGcpIR-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="370" as="sourcePoint" />
+            <mxPoint x="510" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
