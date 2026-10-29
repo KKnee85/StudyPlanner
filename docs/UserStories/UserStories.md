@@ -14,7 +14,6 @@ So that I can **use the system**.
 - Password is encrypted
 - User account is saved
 
-
 ## Labels
 
 backend
@@ -38,7 +37,6 @@ So that **my preferences are saved, and my information is secure, across multipl
 - Entering invalid username not already in system will not allow access to system
 - Entering invalid password for username existing in system will not allow access to system
 
-
 ## Labels
 
 backend
@@ -60,6 +58,13 @@ So that **my class times are saved and visible in the calendar with the relevant
 - User can enter class ID
 - User can enter class times and dates
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
 # US-04 Update Classes
 
 As a **student**,
@@ -76,6 +81,12 @@ So that **as I complete classes, drop classes, and take new classes my class lis
 - User can add additional classes to class list
 - System automatically handles updates to calendar based on class updates
 
+## Labels
+
+backend
+frontend
+unassigned-sprint
+
 # US-05 Schedule Time Blocks
 
 As a **student**,
@@ -91,6 +102,14 @@ So that **my calendar is propagated with my daily schedule including study times
 - User can link class or classes to event
 - User can designate if event is single time or repeating weekly/bi-weekly ect
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-06 Schedule Due Dates
 
 As a **student**,
@@ -104,6 +123,14 @@ So that **my calendar is propagated with my deadlines**
 - User can enter a due date and time
 - Due date creates a visible indicator on calendar view
 - Due dates can be assigned a class
+
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
 
 # US-07 Receive Conflict Notification
 
@@ -119,6 +146,14 @@ So that **I never double book myself to multiple commitments**
 - System must prompt user if they would like to update schedule to accomodate
 - System must generate automated time suggestion with no conflicts
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-08 View My Calendar
 
 As a **student**,
@@ -133,6 +168,14 @@ So that **I can see a visual representation of my scheduled commitments**
 - Calendar will be populated with blocks representing scheduled times
 - Calendar blocks will display relevant information such as title and time period
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-09 View Block Details
 
 As a **student**,
@@ -145,6 +188,14 @@ So that **I can see all linked classes, tests times, and notes**
 
 - Calendar blocks are interact-able with unique sub menu
 - Sub menu details linked classes, resources, notes, and upcoming test/deadlines of linked classes
+
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
 
 # US-10 Update Block Details
 
@@ -162,6 +213,13 @@ So that **I can adjust for changes or fix mistakes**
 - Classes may be linked or removed from a time block
 - Time block may be fully deleted.
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
 # US-11 Receive Due Date Notifications
 
 As a **student**,
@@ -178,6 +236,14 @@ So that **I can be reminded of important turn ins**
 - Users will be able to adjust reminder intervals for specific deadlines, (1week, 1day, 1hour, etc)
 - Notifications will be updated should due date be changed or deleted
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-12 Save a resource
 
 As a **student**,
@@ -192,6 +258,14 @@ So that **I can easily access study materials**
 - User may name each link or file option
 - Links and files are saved and accessible from a dedicated resources menu
 - User can open links and files from the resources menu
+
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
 
 
 # US-13 Associate resources with classes
@@ -209,6 +283,14 @@ So that **I can organize study materials**
 - Resources may appear more than once in the resource list based on sorting options
 - Class associations are saved
 
+## Labels
+
+backend
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-14 Access resources from calendar block
 
 As a **student**,
@@ -223,6 +305,13 @@ So that **I can quickly access useful study materials while I'm studying**
 - Resources for all classes associated to a block are displayed
 - Blocks with no associated classes do not display resources
 
+## Labels
+
+frontend
+high-priority
+unassigned-sprint
+
+
 # US-15 Update resource list
 
 As a **student**,
@@ -236,6 +325,13 @@ So that **I can add. remove, or reorganize my study materials**
 - User can edit a resource's title, link, file, or class associations
 - User can removed resources from the list
 - Deleted resources are removed from all class associations and resource access points 
+
+## Labels
+
+backend
+frontend
+unassigned-sprint
+
 
 
 
