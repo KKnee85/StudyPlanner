@@ -6,11 +6,10 @@
 
 ## Demonstration
 
-- User Stories
-- Use Case Diagrams
-- Activity Diagrams
-- Product Backlog
+- User Stories completed
+- Use Case Diagrams completed
+- Activity Diagrams completed
 
 ## Stakeholder Feedback
 
-- N/A
+- Code has not been started
