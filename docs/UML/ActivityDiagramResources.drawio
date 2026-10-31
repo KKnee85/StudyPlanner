@@ -1,11 +1,13 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="rwugxGOwuEF_uGqGauF4">
-    <mxGraphModel dx="2111" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="616" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Olya7jN1KSO7NOc2p2He-2" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);fillStyle=auto;strokeColor=light-dark(#FFFFFF,#FFFFFF);fontColor=light-dark(#000000,#000000);" value="User" vertex="1">
-          <mxGeometry height="1170" width="915" as="geometry" />
+        <mxCell id="Olya7jN1KSO7NOc2p2He-2" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillStyle=auto;strokeColor=none;" value="User" vertex="1">
+          <mxGeometry height="1170" width="915" as="geometry">
+            <mxRectangle height="30" width="70" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Olya7jN1KSO7NOc2p2He-4" parent="Olya7jN1KSO7NOc2p2He-2" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=light-dark(#ff0000, #ffffff);" value="" vertex="1">
           <mxGeometry height="30" width="30" x="335" y="40" as="geometry" />
@@ -203,7 +205,7 @@
         <mxCell id="_DkiGVuhRd127lq3j1nZ-44" edge="1" parent="Olya7jN1KSO7NOc2p2He-2" source="_DkiGVuhRd127lq3j1nZ-41" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;" target="_DkiGVuhRd127lq3j1nZ-43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Olya7jN1KSO7NOc2p2He-3" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFFFFF);fontColor=light-dark(#000000,#000000);" value="Study Planner - Resources" vertex="1">
+        <mxCell id="Olya7jN1KSO7NOc2p2He-3" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;strokeColor=none;" value="Study Planner - Resources" vertex="1">
           <mxGeometry height="1170" width="415" x="915" as="geometry" />
         </mxCell>
         <mxCell id="Olya7jN1KSO7NOc2p2He-14" parent="Olya7jN1KSO7NOc2p2He-3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;" value="Update Database" vertex="1">
