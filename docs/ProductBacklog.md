@@ -14,5 +14,5 @@
 | PB-10 |  | [US-09 View Block Details](UserStories/UserStories.md#us-09-view-block-details) | Med |
 | PB-11 |  | [US-10 Update Block Details](UserStories/UserStories.md#us-10-update-block-details) | Med |
 | PB-12 |  | [US-13 Associate resources with classes](UserStories/UserStories.md#us-13-associate-resources-with-classes) | Low |
-| PB-13 |  | [US-14 Access resources from calendar block](UserStories/UserStories.md#us-14-access-resources-from-caleendar-block) | Low |
+| PB-13 |  | [US-14 Access resources from calendar block](UserStories/UserStories.md#us-14-access-resources-from-calendar-block) | Low |
 | PB-14 |  | [US-15 Update resource list](UserStories/UserStories.md#us-15-update-resource-list) | Med |
