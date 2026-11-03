@@ -2,8 +2,13 @@
 build/
 **/build/
 
+# Gradle
+.gradle/
+local.properties
+
 # Kotlin and IDE files
 .kotlin/
 .idea/
 *.iml
+*.hprof
 
