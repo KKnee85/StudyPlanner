@@ -21,7 +21,9 @@ The application in question will have:
 
 ## Technologies Used
 - Kotlin
-- Kotlin Multiplatform Library
+- Kotlin Multiplatform
+- Compose Multiplatform (Desktop)
+- Gradle
 
 ## Scrum Process
 
@@ -36,46 +38,43 @@ This project follows Scrum practices using:
 ## Repository Structure
 
 - /docs       Scrum documents
-- /src        Application source code
-- /test       Test code
+- /src        Gradle build root and application source code
 
 <pre>
 StudyPlanner/
 │
 ├── README.md
 ├── docs
-│   ├── ProductBacklog.md
-│   ├── ProductVision.md
-│   ├── RequirementsSpecification.md
-│   ├── RiskRegister.md
-│   └── Sprint1
-│       ├── Planning.md
-│       ├── Retrospective.md
-│       └── Review.md
+│   ├── ProductBacklog.md
+│   ├── ProductVision.md
+│   ├── RequirementsSpecification.md
+│   ├── RiskRegister.md
+│   └── Sprint1
+│       ├── Planning.md
+│       ├── Retrospective.md
+│       └── Review.md
 └── src
-    ├── kotlin
-    ├── kotlin.bat
-    ├── libs.versions.toml
-    ├── project.yaml
+    ├── build.gradle.kts
+    ├── settings.gradle.kts
+    ├── gradle.properties
+    ├── gradlew
+    ├── gradlew.bat
     ├── README.md
-    ├── build
-    │   ├── hot-reload-app.chr.log
-    │   ├── shutdown.log
-    │   ├── artifacts
-    │   ├── generated
-    │   ├── ic-cache
-    │   ├── incremental.state
-    │   ├── logs
-    │   ├── tasks
-    │   └── temp
+    ├── gradle
+    │   ├── libs.versions.toml
+    │   └── wrapper
     ├── desktopApp
-    │   ├── module.yaml
-    │   ├── resources
-    │   └── src
+    │   ├── build.gradle.kts
+    │   └── src
+    │       └── main
+    │           ├── kotlin
+    │           └── resources
     └── shared
-        ├── module.yaml
-        ├── composeResources
-        ├── src
-        ├── src@jvm
-        ├── test
-        └── test@jvm
+        ├── build.gradle.kts
+        └── src
+            ├── commonMain
+            │   ├── kotlin
+            │   └── composeResources
+            ├── commonTest
+            └── jvmMain
+</pre>
