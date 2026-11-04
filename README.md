@@ -52,10 +52,6 @@ On Windows use `gradlew.bat` instead of `./gradlew`.
 
 Dependency versions are declared in [gradle/libs.versions.toml](./gradle/libs.versions.toml).
 
-> **NixOS note:** the desktop app loads a prebuilt native library (skiko) that needs
-> `libGL.so.1` at runtime. On NixOS, run with `LD_LIBRARY_PATH=/run/opengl-driver/lib` — set
-> system-wide on Mark's machine, so nothing to do there.
-
 ## Scrum Process
 
 This project follows Scrum practices using:

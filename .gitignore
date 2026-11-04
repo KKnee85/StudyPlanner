@@ -12,3 +12,10 @@ local.properties
 *.iml
 *.hprof
 
+# Nix / devenv local artifacts. Only the generated ones: a flake.nix or
+# devenv.nix is project configuration and belongs in the repository.
+result
+result-*
+.direnv/
+.devenv/
+
