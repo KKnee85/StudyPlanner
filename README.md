@@ -25,6 +25,37 @@ The application in question will have:
 - Compose Multiplatform (Desktop)
 - Gradle
 
+## Building and Running
+
+Requires **JDK 21**. The Gradle wrapper downloads the pinned Gradle version on first use, so
+no separate Gradle install is needed.
+
+```sh
+./gradlew build                  # compile everything and run the checks
+./gradlew :desktopApp:run        # launch the desktop app
+./gradlew test                   # run the tests
+```
+
+On Windows use `gradlew.bat` instead of `./gradlew`.
+
+### Source layout
+
+| Path | Contains |
+|---|---|
+| `shared/src/commonMain/kotlin` | Code compiled for every platform (Compose UI, business logic) |
+| `shared/src/jvmMain/kotlin` | JVM-only code — `actual` implementations for `expect` declarations |
+| `shared/src/commonMain/composeResources` | Images, fonts, strings and other Compose resources |
+| `shared/src/commonTest/kotlin` | Tests that run on every platform |
+| `shared/src/jvmTest/kotlin` | JVM-only tests |
+| `desktopApp/src/main/kotlin` | Desktop entry point (`main.kt`) |
+| `desktopApp/src/main/resources` | JVM resources such as `logback.xml` |
+
+Dependency versions are declared in [gradle/libs.versions.toml](./gradle/libs.versions.toml).
+
+> **NixOS note:** the desktop app loads a prebuilt native library (skiko) that needs
+> `libGL.so.1` at runtime. On NixOS, run with `LD_LIBRARY_PATH=/run/opengl-driver/lib` — set
+> system-wide on Mark's machine, so nothing to do there.
+
 ## Scrum Process
 
 This project follows Scrum practices using:
@@ -37,8 +68,9 @@ This project follows Scrum practices using:
 
 ## Repository Structure
 
-- /docs       Scrum documents
-- /src        Gradle build root and application source code
+- /docs            Scrum documents
+- /shared          Shared Kotlin Multiplatform code (Compose UI, business logic)
+- /desktopApp      Desktop (JVM) application module
 
 <pre>
 StudyPlanner/
@@ -53,28 +85,26 @@ StudyPlanner/
 │       ├── Planning.md
 │       ├── Retrospective.md
 │       └── Review.md
-└── src
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── gradle
+│   ├── libs.versions.toml
+│   └── wrapper
+├── desktopApp
+│   ├── build.gradle.kts
+│   └── src
+│       └── main
+│           ├── kotlin
+│           └── resources
+└── shared
     ├── build.gradle.kts
-    ├── settings.gradle.kts
-    ├── gradle.properties
-    ├── gradlew
-    ├── gradlew.bat
-    ├── README.md
-    ├── gradle
-    │   ├── libs.versions.toml
-    │   └── wrapper
-    ├── desktopApp
-    │   ├── build.gradle.kts
-    │   └── src
-    │       └── main
-    │           ├── kotlin
-    │           └── resources
-    └── shared
-        ├── build.gradle.kts
-        └── src
-            ├── commonMain
-            │   ├── kotlin
-            │   └── composeResources
-            ├── commonTest
-            └── jvmMain
+    └── src
+        ├── commonMain
+        │   ├── kotlin
+        │   └── composeResources
+        ├── commonTest
+        └── jvmMain
 </pre>
