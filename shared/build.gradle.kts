@@ -26,7 +26,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.kizitonwose.calendar.compose)
-            implementation("com.google.gson:gson:2.10.1")
+            implementation("com.google.code:gson:2.10.1")
         }
 
         commonTest.dependencies {
