@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.compose")
@@ -5,7 +7,13 @@ plugins {
 }
 
 kotlin {
-    jvm()
+    jvm {
+        // The project targets JDK 25 everywhere, so bytecode does not depend on
+        // whichever JDK happens to run Gradle.
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_25)
+        }
+    }
 
     sourceSets {
         commonMain.dependencies {

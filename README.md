@@ -27,7 +27,7 @@ The application in question will have:
 
 ## Building and Running
 
-Requires **JDK 21**. The Gradle wrapper downloads the pinned Gradle version on first use, so
+Requires **JDK 25**. The Gradle wrapper downloads the pinned Gradle version on first use, so
 no separate Gradle install is needed.
 
 ```sh
