@@ -19,4 +19,5 @@ enum class AppSection(val label: String, val icon: ImageVector) {
 enum class PlannerDialog {
     NewTask,
     NewBlock,
+    NewClass,
 }

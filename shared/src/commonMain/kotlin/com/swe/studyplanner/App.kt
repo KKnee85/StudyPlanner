@@ -40,6 +40,7 @@ import com.swe.studyplanner.ui.Sidebar
 import com.swe.studyplanner.ui.TasksView
 import com.swe.studyplanner.ui.TopBar
 import com.swe.studyplanner.ui.dialogs.NewBlockDialog
+import com.swe.studyplanner.ui.dialogs.NewClassDialog
 import com.swe.studyplanner.ui.dialogs.NewTaskDialog
 
 private const val ZOOM_STEP = 0.05f
@@ -141,7 +142,12 @@ fun App() {
                                         AppSection.Classes -> {
                                             val course = openCourse
                                             if (course == null) {
-                                                ClassesView(planner, compact) { openCourse = it }
+                                                ClassesView(
+                                                    planner = planner,
+                                                    compact = compact,
+                                                    onCourseClick = { openCourse = it },
+                                                    onNewClass = { dialog = PlannerDialog.NewClass },
+                                                )
                                             } else {
                                                 CourseDetailView(course, onBack = { openCourse = null }, compact = compact)
                                             }
@@ -168,6 +174,7 @@ fun App() {
                 defaultDate = selectedDate,
                 onDismiss = { dialog = null },
             )
+            PlannerDialog.NewClass -> NewClassDialog(onDismiss = { dialog = null })
             null -> Unit
         }
     }

@@ -11,11 +11,17 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -31,18 +37,37 @@ import com.swe.studyplanner.model.PlannerData
 import com.swe.studyplanner.theme.Gruvbox
 
 @Composable
-fun ClassesView(planner: PlannerData, compact: Boolean, onCourseClick: (Course) -> Unit) {
+fun ClassesView(
+    planner: PlannerData,
+    compact: Boolean,
+    onCourseClick: (Course) -> Unit,
+    onNewClass: () -> Unit,
+) {
     Column(Modifier.fillMaxSize().padding(horizontal = if (compact) 16.dp else 28.dp)) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
+            if (!compact) {
+                Text(
+                    text = "Deadlines and study blocks are attached to a class",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = Gruvbox.Gray,
+                )
+            }
             Spacer(Modifier.weight(1f))
-            Text(
-                text = "Deadlines and study blocks are attached to a class",
-                style = MaterialTheme.typography.labelSmall,
-                color = Gruvbox.Gray,
-            )
+            Button(
+                onClick = onNewClass,
+                shape = RoundedCornerShape(8.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Gruvbox.Green,
+                    contentColor = Gruvbox.BgHard,
+                ),
+            ) {
+                Icon(Icons.Default.Add, contentDescription = null, modifier = Modifier.size(18.dp))
+                Spacer(Modifier.width(6.dp))
+                Text("New class")
+            }
         }
         Spacer(Modifier.height(14.dp))
         LazyVerticalGrid(

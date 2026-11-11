@@ -283,3 +283,27 @@ fun NewBlockDialog(
         }
     }
 }
+
+@Composable
+fun NewClassDialog(onDismiss: () -> Unit) {
+    var name by remember { mutableStateOf("") }
+    var code by remember { mutableStateOf("") }
+    var instructor by remember { mutableStateOf("") }
+    var schedule by remember { mutableStateOf("") }
+
+    PlannerDialogShell(
+        title = "New class",
+        confirmLabel = "Add class",
+        confirmEnabled = name.isNotBlank() && code.isNotBlank(),
+        onDismiss = onDismiss,
+        onConfirm = onDismiss,
+    ) {
+        Field("Class name", name, { name = it }, "e.g. Software Engineering")
+        Spacer(Modifier.height(12.dp))
+        Field("Class code", code, { code = it }, "e.g. SWE 2050")
+        Spacer(Modifier.height(12.dp))
+        Field("Instructor", instructor, { instructor = it }, "Optional")
+        Spacer(Modifier.height(12.dp))
+        Field("Meeting times", schedule, { schedule = it }, "e.g. Mon / Wed  10:00 - 11:15")
+    }
+}
