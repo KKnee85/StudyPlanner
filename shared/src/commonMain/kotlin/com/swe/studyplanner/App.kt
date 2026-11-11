@@ -68,8 +68,6 @@ fun App() {
         ) {
             Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                 BoxWithConstraints(Modifier.fillMaxSize()) {
-                    // Breakpoints are in dp, so they react to both the window
-                    // size and the zoom above.
                     val compact = maxWidth < 980.dp
                     val railOnly = maxWidth < 1180.dp
                     val calendarWide = section == AppSection.Calendar && !compact
@@ -89,8 +87,6 @@ fun App() {
                         )
 
                         if (calendarWide) {
-                            // The day panel is a sibling of the header so it can
-                            // run the full height of the window.
                             Column(Modifier.weight(1f).fillMaxHeight()) {
                                 TopBar(
                                     title = section.label,

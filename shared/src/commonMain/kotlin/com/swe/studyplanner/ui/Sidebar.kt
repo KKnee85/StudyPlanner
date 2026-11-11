@@ -170,11 +170,6 @@ private fun DueThisWeekCard(planner: PlannerData) {
     }
 }
 
-/**
- * UI zoom. Everything is laid out in dp, so multiplying the local density scales
- * the whole interface without reflowing it — useful on very dense or very large
- * displays, and independent of the window size breakpoints below.
- */
 @Composable
 private fun ZoomControl(compact: Boolean, zoom: Float, onZoomIn: () -> Unit, onZoomOut: () -> Unit) {
     val percent = "${(zoom * 100).roundToInt()}%"
@@ -228,7 +223,7 @@ private fun UserRow() {
         }
         Spacer(Modifier.width(10.dp))
         Column {
-            Text("Mark Hancock", style = MaterialTheme.typography.bodySmall, color = Gruvbox.Fg1)
+            Text("Student Name", style = MaterialTheme.typography.bodySmall, color = Gruvbox.Fg1)
             Text("Student", style = MaterialTheme.typography.labelSmall, color = Gruvbox.Gray)
         }
     }
