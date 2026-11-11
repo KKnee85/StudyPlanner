@@ -23,7 +23,7 @@ dependencies {
     implementation(compose.preview)
     implementation(libs.kotlinx.coroutines.swing)
     implementation(libs.logback.classic)
-    implementation("com.google.code.gson:gson:2.15.0")
+    implementation(libs.gson)
 }
 
 compose.desktop {
