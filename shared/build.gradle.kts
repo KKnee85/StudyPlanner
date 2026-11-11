@@ -9,7 +9,10 @@ plugins {
 kotlin {
     jvm {
         // The project targets JDK 25 everywhere, so bytecode does not depend on
-        // whichever JDK happens to run Gradle.
+        // whichever JDK happens to run Gradle. Both halves have to be pinned:
+        // Kotlin through jvmTarget, Java through targetCompatibility, otherwise
+        // a Gradle run on an older JDK trips the "Inconsistent JVM-target
+        // compatibility" check.
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_25)
         }
@@ -34,6 +37,11 @@ kotlin {
             implementation(kotlin("test"))
         }
     }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
 }
 
 compose.resources {
