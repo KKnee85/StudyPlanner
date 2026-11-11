@@ -174,7 +174,10 @@ fun App() {
                 defaultDate = selectedDate,
                 onDismiss = { dialog = null },
             )
-            PlannerDialog.NewClass -> NewClassDialog(onDismiss = { dialog = null })
+            PlannerDialog.NewClass -> NewClassDialog(
+                planner = planner,
+                onDismiss = { dialog = null },
+            )
             null -> Unit
         }
     }

@@ -50,6 +50,23 @@ class PlannerData {
     fun tasksDueOn(date: LocalDate): List<TaskItem> = tasks.filter { it.dueDate == date }
 
     fun blocksOn(date: LocalDate): List<StudyBlock> = blocks.filter { it.date == date }.sortedBy { it.start }
+    
+    fun addCourse(
+        name: String,
+        code: String,
+        instructor: String,
+        schedule: String,
+    ) {
+        courses = courses + Course(
+            id = (courses.maxOfOrNull { it.id } ?: 0) + 1,
+            name = name,
+            code = code,
+            instructor = instructor,
+            schedule = schedule,
+            color = Gruvbox.CourseColors[courses.size % Gruvbox.CourseColors.size],
+        )
+        saveToJson()
+    }
 
     fun addTask( // Adds task to TaskItem (will have to update with final data storage)
         title: String,

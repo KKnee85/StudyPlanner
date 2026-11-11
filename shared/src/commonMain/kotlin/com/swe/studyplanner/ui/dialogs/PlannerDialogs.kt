@@ -285,7 +285,10 @@ fun NewBlockDialog(
 }
 
 @Composable
-fun NewClassDialog(onDismiss: () -> Unit) {
+fun NewClassDialog(
+    planner: PlannerData,
+    onDismiss: () -> Unit,
+) {
     var name by remember { mutableStateOf("") }
     var code by remember { mutableStateOf("") }
     var instructor by remember { mutableStateOf("") }
@@ -295,8 +298,16 @@ fun NewClassDialog(onDismiss: () -> Unit) {
         title = "New class",
         confirmLabel = "Add class",
         confirmEnabled = name.isNotBlank() && code.isNotBlank(),
+        onConfirm = {
+            planner.addCourse(
+                name = name.trim(),
+                code = code.trim(),
+                instructor = instructor.trim(),
+                schedule = schedule.trim(),
+            )
+            onDismiss()
+        },
         onDismiss = onDismiss,
-        onConfirm = onDismiss,
     ) {
         Field("Class name", name, { name = it }, "e.g. Software Engineering")
         Spacer(Modifier.height(12.dp))
