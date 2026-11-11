@@ -8,11 +8,6 @@ plugins {
 
 kotlin {
     jvm {
-        // The project targets JDK 25 everywhere, so bytecode does not depend on
-        // whichever JDK happens to run Gradle. Both halves have to be pinned:
-        // Kotlin through jvmTarget, Java through targetCompatibility, otherwise
-        // a Gradle run on an older JDK trips the "Inconsistent JVM-target
-        // compatibility" check.
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_25)
         }
@@ -31,6 +26,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.kizitonwose.calendar.compose)
+            implementation("com.google.gson:gson:2.10.1")
         }
 
         commonTest.dependencies {
@@ -46,6 +42,5 @@ java {
 
 compose.resources {
     packageOfResClass = "com.swe.studyplanner.resources"
-    // Generate public accessors so other modules (and previews) can use Res.*
     publicResClass = true
 }
