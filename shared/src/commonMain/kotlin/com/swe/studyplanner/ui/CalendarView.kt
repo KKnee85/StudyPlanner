@@ -183,7 +183,7 @@ private fun DayCell(
     val inMonth = day.position == DayPosition.MonthDate
 
     val markers = (planner.blocksOn(day.date).mapNotNull { planner.course(it.courseId)?.color } +
-        planner.tasksDueOn(day.date).mapNotNull { planner.course(it.courseId)?.color })
+        planner.tasksDueOn(day.date).map { planner.course(it.courseId)?.color ?: Gruvbox.Gray })
         .distinct()
         .take(3)
 

@@ -3,6 +3,9 @@ package com.swe.studyplanner.model
 import com.kizitonwose.calendar.core.minusDays
 import com.kizitonwose.calendar.core.now
 import com.kizitonwose.calendar.core.plusDays
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import com.swe.studyplanner.theme.Gruvbox
 import kotlinx.datetime.LocalDate
 
@@ -23,23 +26,26 @@ class PlannerData {
         Course(4, "Physics I", "PHYS 1010", "Dr. Singh", "Tue / Thu  08:00 - 09:15", Gruvbox.Purple),
     )
 
-    val tasks: List<TaskItem> = listOf(
-        TaskItem(1, "Sprint 2 prototype", 1, today, "23:59", Priority.High, "Calendar, classes, due dates"),
+    var tasks: List<TaskItem> by mutableStateOf(listOf(
+        // Keep all your existing TaskItem entries here.
+        // TaskItem(1, "Sprint 2 prototype", 1, today, "23:59", Priority.High, "Calendar, classes, due dates"),
         TaskItem(2, "Problem set 6", 3, today.plusDays(1), "17:00", Priority.Medium),
         TaskItem(3, "Lab report: optics", 4, today.plusDays(3), "12:00", Priority.High, "Include error analysis"),
         TaskItem(4, "Read chapter 7", 2, today.plusDays(5), "09:00", Priority.Low),
         TaskItem(5, "Group retro notes", 1, today.minusDays(1), "16:00", Priority.High, "Was due yesterday"),
         TaskItem(6, "Quiz 3 revision", 3, today.plusDays(7), "08:00", Priority.Medium),
         TaskItem(7, "Sprint review slides", 1, today.plusDays(9), "23:59", Priority.Medium, done = true),
-    )
+    ))
+        private set
 
-    val blocks: List<StudyBlock> = listOf(
+    var blocks: List<StudyBlock> by mutableStateOf(listOf(
         StudyBlock(1, "Lecture", 2, today, "13:00", "14:15", "Weekly"),
         StudyBlock(2, "Study: Sprint 2", 1, today, "18:00", "20:00", "Once"),
         StudyBlock(3, "Problem set session", 3, today.plusDays(1), "10:00", "11:30", "Once"),
         StudyBlock(4, "Lab prep", 4, today.plusDays(2), "15:00", "16:30", "Once"),
         StudyBlock(5, "Group standup", 1, today.plusDays(2), "09:00", "09:30", "Weekly"),
-    )
+    ))
+        private set
 
     val resources: List<ResourceLink> = listOf(
         ResourceLink(1, "Compose Multiplatform docs", "https://www.jetbrains.com/help/kotlin-multiplatform-dev/", "Link", listOf(1)),
@@ -55,4 +61,44 @@ class PlannerData {
 
     fun blocksOn(date: LocalDate): List<StudyBlock> =
         blocks.filter { it.date == date }.sortedBy { it.start }
+
+    fun addTask( // Adds task to TaskItem (will have to update with final data storage)
+        title: String,
+        courseId: Int?,
+        dueDate: LocalDate,
+        dueTime: String,
+        priority: Priority,
+        notes: String,
+    ) {
+        tasks = tasks + TaskItem(
+            id = (tasks.maxOfOrNull { it.id } ?: 0) + 1,
+            title = title,
+            courseId = courseId,
+            dueDate = dueDate,
+            dueTime = dueTime,
+            priority = priority,
+            notes = notes,
+        )
+    }
+
+    fun addBlock( // Adds block to StudyBlock (will have to update)
+        title: String,
+        courseId: Int?,
+        date: LocalDate,
+        start: String,
+        end: String,
+        repeat: String,
+        notes: String,
+    ) {
+        blocks = blocks + StudyBlock(
+            id = (blocks.maxOfOrNull { it.id } ?: 0) + 1,
+            title = title,
+            courseId = courseId,
+            date = date,
+            start = start,
+            end = end,
+            repeat = repeat,
+            notes = notes,
+        )
+    }
 }

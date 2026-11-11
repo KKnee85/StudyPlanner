@@ -171,12 +171,28 @@ fun NewTaskDialog(
     var courseId by remember { mutableStateOf<Int?>(null) }
     var priority by remember { mutableStateOf(Priority.Medium) }
 
+    val dueDate = runCatching { LocalDate.parse(dateText.trim()) }.getOrNull() // Checks for valid date or null
+    val dueTime = timeText.trim()
+    val validTime = Regex("([01][0-9]|2[0-3]):[0-5][0-9]").matches(dueTime) // Checks for valid time format
+
     PlannerDialogShell(
         title = "New deadline",
         confirmLabel = "Add deadline",
-        confirmEnabled = title.isNotBlank(),
+        confirmEnabled = title.isNotBlank() && dueDate != null && validTime,
         onDismiss = onDismiss,
-        onConfirm = onDismiss,
+        onConfirm = {
+            if (dueDate != null && title.isNotBlank() && validTime) {
+                planner.addTask(
+                    title = title.trim(),
+                    courseId = courseId,
+                    dueDate = dueDate,
+                    dueTime = dueTime,
+                    priority = priority,
+                    notes = notes.trim(),
+                )
+                onDismiss()
+            }
+        }
     ) {
         Field("Title", title, { title = it }, "e.g. Problem set 7")
         Spacer(Modifier.height(12.dp))
@@ -219,12 +235,31 @@ fun NewBlockDialog(
     var courseId by remember { mutableStateOf<Int?>(null) }
     var repeat by remember { mutableStateOf("Once") }
 
+    val blockDate = runCatching { LocalDate.parse(dateText.trim()) }.getOrNull() // Checks for valid date or null
+    val startTime = start.trim()
+    val validStartTime = Regex("([01][0-9]|2[0-3]):[0-5][0-9]").matches(startTime) // Checks for valid time format
+    val endTime = end.trim()
+    val validEndTime = Regex("([01][0-9]|2[0-3]):[0-5][0-9]").matches(endTime)
+
     PlannerDialogShell(
         title = "New study block",
         confirmLabel = "Add block",
-        confirmEnabled = title.isNotBlank(),
+        confirmEnabled = title.isNotBlank() && blockDate != null && validStartTime && validEndTime,
         onDismiss = onDismiss,
-        onConfirm = onDismiss,
+        onConfirm = {
+            if (blockDate != null && title.isNotBlank() && validStartTime && validEndTime) {
+                planner.addBlock(
+                    title = title.trim(),
+                    courseId = courseId,
+                    date = blockDate,
+                    start = startTime,
+                    end = endTime,
+                    repeat = repeat,
+                    notes = "",
+                )
+                onDismiss()
+            }
+        }
     ) {
         Field("Title", title, { title = it }, "e.g. Study: midterm review")
         Spacer(Modifier.height(12.dp))
