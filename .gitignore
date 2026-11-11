@@ -19,3 +19,7 @@ result-*
 .direnv/
 .devenv/
 
+# kotlin-language-server cache. KLS is disabled in Neovim (see
+# ~/.config/nvim/lua/plugins/languages.lua); this is regenerated if it is
+# ever turned back on.
+kls_database.db
