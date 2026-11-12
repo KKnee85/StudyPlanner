@@ -11,13 +11,6 @@ import com.swe.studyplanner.theme.Gruvbox
 import kotlinx.datetime.LocalDate
 import java.io.File
 
-/**
- * Static sample content for the UI prototype.
- *
- * Deliberately read-only: there is no persistence, no editing and no creation
- * here. Every screen renders this fixed set so the layout can be reviewed
- * without any of the underlying logic existing yet.
- */
 class PlannerData {
     val today: LocalDate = LocalDate.now()
 
