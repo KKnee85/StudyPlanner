@@ -247,6 +247,11 @@ fun DayPanel(
 ) {
     val blocks = planner.blocksOn(date)
     val tasks = planner.tasksDueOn(date)
+    val classesToday = planner.courses.flatMap { course ->
+        course.meetings.orEmpty()
+            .filter { meeting -> meeting.dayOfWeek == date.dayOfWeek }
+            .map { meeting -> course to meeting }
+    }.sortedBy { (_, meeting) -> meeting.start }
 
     Column(
         modifier = modifier
@@ -282,6 +287,17 @@ fun DayPanel(
         HorizontalDivider(color = Gruvbox.Bg1)
         Spacer(Modifier.height(16.dp))
 
+        SectionLabel("Class Schedule")
+        Spacer(Modifier.height(18.dp))
+        if (classesToday.isEmpty()) {
+            Text("No classes scheduled.")
+        } else {
+            classesToday.forEach { (course, meeting) ->
+                Text("${meeting.start}–${meeting.end}  ·  ${course.name}")
+            }
+        }
+
+        Spacer(Modifier.height(18.dp))
         SectionLabel("Study blocks")
         Spacer(Modifier.height(10.dp))
         if (blocks.isEmpty()) {

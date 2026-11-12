@@ -50,12 +50,13 @@ class PlannerData {
     fun tasksDueOn(date: LocalDate): List<TaskItem> = tasks.filter { it.dueDate == date }
 
     fun blocksOn(date: LocalDate): List<StudyBlock> = blocks.filter { it.date == date }.sortedBy { it.start }
-    
+
     fun addCourse(
         name: String,
         code: String,
         instructor: String,
         schedule: String,
+        meetings: List<ClassMeeting>,
     ) {
         courses = courses + Course(
             id = (courses.maxOfOrNull { it.id } ?: 0) + 1,
@@ -64,6 +65,7 @@ class PlannerData {
             instructor = instructor,
             schedule = schedule,
             color = Gruvbox.CourseColors[courses.size % Gruvbox.CourseColors.size],
+            meetings = meetings,
         )
         saveToJson()
     }

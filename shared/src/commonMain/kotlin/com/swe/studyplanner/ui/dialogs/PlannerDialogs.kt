@@ -13,6 +13,12 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilterChip
@@ -28,6 +34,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -35,9 +42,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.swe.studyplanner.model.PlannerData
 import com.swe.studyplanner.model.Priority
+import com.swe.studyplanner.model.ClassMeeting
 import com.swe.studyplanner.theme.Gruvbox
 import com.swe.studyplanner.ui.SectionLabel
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.DayOfWeek
 
 /**
  * Modal forms for the prototype.
@@ -284,6 +293,33 @@ fun NewBlockDialog(
     }
 }
 
+private data class MeetingDraft(
+    val day: DayOfWeek? = null,
+    val start: String = "",
+    val end: String = "",
+)
+
+
+private val meetingTimePattern = Regex("(?:[01][0-9]|2[0-3]):[0-5][0-9]")
+
+private fun DayOfWeek.shortLabel(): String =
+    name.take(3).lowercase().replaceFirstChar { it.uppercaseChar() }
+
+private fun MeetingDraft.toMeetingOrNull(): ClassMeeting? {
+    val weekday = day ?: return null
+    val startTime = start.trim()
+    val endTime = end.trim()
+
+    if (!meetingTimePattern.matches(startTime) ||
+        !meetingTimePattern.matches(endTime) ||
+        endTime <= startTime
+    ) {
+        return null
+    }
+
+    return ClassMeeting(weekday, startTime, endTime)
+}
+
 @Composable
 fun NewClassDialog(
     planner: PlannerData,
@@ -292,29 +328,111 @@ fun NewClassDialog(
     var name by remember { mutableStateOf("") }
     var code by remember { mutableStateOf("") }
     var instructor by remember { mutableStateOf("") }
-    var schedule by remember { mutableStateOf("") }
+    var rows by remember { mutableStateOf(listOf(MeetingDraft())) }
+
+    val meetings = rows.mapNotNull { it.toMeetingOrNull() }
+    val canSave = name.isNotBlank() &&
+        code.isNotBlank() &&
+        meetings.size == rows.size
 
     PlannerDialogShell(
         title = "New class",
         confirmLabel = "Add class",
-        confirmEnabled = name.isNotBlank() && code.isNotBlank(),
-        onConfirm = {
-            planner.addCourse(
-                name = name.trim(),
-                code = code.trim(),
-                instructor = instructor.trim(),
-                schedule = schedule.trim(),
-            )
-            onDismiss()
-        },
+        confirmEnabled = canSave,
         onDismiss = onDismiss,
+        onConfirm = {
+            if (canSave) {
+                planner.addCourse(
+                    name = name.trim(),
+                    code = code.trim(),
+                    instructor = instructor.trim(),
+                    schedule = meetings.joinToString(" · ") { meeting ->
+                        "${meeting.dayOfWeek.shortLabel()} ${meeting.start}–${meeting.end}"
+                    },
+                    meetings = meetings,
+                )
+                onDismiss()
+            }
+        },
     ) {
         Field("Class name", name, { name = it }, "e.g. Software Engineering")
         Spacer(Modifier.height(12.dp))
         Field("Class code", code, { code = it }, "e.g. SWE 2050")
         Spacer(Modifier.height(12.dp))
         Field("Instructor", instructor, { instructor = it }, "Optional")
-        Spacer(Modifier.height(12.dp))
-        Field("Meeting times", schedule, { schedule = it }, "e.g. Mon / Wed  10:00 - 11:15")
+        Spacer(Modifier.height(16.dp))
+        SectionLabel("Meeting times")
+
+        Column(
+            modifier = Modifier.heightIn(max = 200.dp)
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            rows.forEachIndexed { index, row ->
+                MeetingRow(
+                    meeting = row,
+                    onChange = { updated ->
+                        rows = rows.toMutableList().apply { set(index, updated) }
+                    },
+                    onRemove = if (rows.size > 1) {
+                        { rows = rows.filterIndexed { i, _ -> i != index } }
+                    } else {
+                        null
+                    },
+                )
+            }
+        }
+
+        TextButton(onClick = { rows = rows + MeetingDraft() }) {
+            Text("+ Add meeting")
+        }
+    }
+}
+
+@Composable
+private fun MeetingRow(
+    meeting: MeetingDraft,
+    onChange: (MeetingDraft) -> Unit,
+    onRemove: (() -> Unit)?,
+) {
+    var menuOpen by remember { mutableStateOf(false) }
+
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Box {
+            TextButton(onClick = { menuOpen = true }) {
+                Text(meeting.day?.shortLabel() ?: "Day")
+            }
+            DropdownMenu(
+                expanded = menuOpen,
+                onDismissRequest = { menuOpen = false },
+            ) {
+                DayOfWeek.entries.forEach { day ->
+                    DropdownMenuItem(
+                        text = { Text(day.shortLabel()) },
+                        onClick = {
+                            onChange(meeting.copy(day = day))
+                            menuOpen = false
+                        },
+                    )
+                }
+            }
+        }
+
+        Column(Modifier.weight(1f)) {
+            Field("Start", meeting.start, { onChange(meeting.copy(start = it)) }, "HH:mm")
+        }
+        Column(Modifier.weight(1f)) {
+            Field("End", meeting.end, { onChange(meeting.copy(end = it)) }, "HH:mm")
+        }
+
+        if (onRemove != null) {
+            TextButton(onClick = onRemove) {
+                Text("Remove")
+            }
+        }
     }
 }

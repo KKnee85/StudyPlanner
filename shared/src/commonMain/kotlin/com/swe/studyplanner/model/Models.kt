@@ -2,6 +2,7 @@ package com.swe.studyplanner.model
 
 import androidx.compose.ui.graphics.Color
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.DayOfWeek
 
 /** How urgent a task is; drives the badge colour only. */
 enum class Priority(val label: String) {
@@ -9,6 +10,12 @@ enum class Priority(val label: String) {
     Medium("Medium"),
     High("High"),
 }
+
+data class ClassMeeting(
+    val dayOfWeek: DayOfWeek,
+    val start: String,
+    val end: String,
+)
 
 /** A class the student is taking (US-03 "Create Classes"). */
 data class Course(
@@ -18,6 +25,7 @@ data class Course(
     val instructor: String,
     val schedule: String,
     val color: Color,
+    val meetings: List<ClassMeeting>? = null,
 )
 
 /** A deadline (US-06 "Schedule Due Dates"). */
