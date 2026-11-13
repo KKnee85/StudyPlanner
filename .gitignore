@@ -12,8 +12,15 @@ local.properties
 *.iml
 *.hprof
 
-# Nix / devenv local artifacts. Only the generated ones: a flake.nix or
-# devenv.nix is project configuration and belongs in the repository.
+# Nix / devenv. These are machine-local: the flake pulls a shell from an
+# absolute path in ~/dotfiles and the lockfile pins that path, so none of it
+# belongs in the repository.
+.envrc
+flake.nix
+flake.lock
+devenv.nix
+devenv.yaml
+devenv.lock
 result
 result-*
 .direnv/
