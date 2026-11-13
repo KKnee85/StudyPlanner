@@ -4,9 +4,9 @@ Duration: Nov 03 - Nov 17
 The main of objective of Sprint 2 is to develop an early prototype for the study planner including the calendar view, class creation, due date creation, and the ability to schedule time blocks. 
 ## Selected Product Backlog Tasks
 - [PB-05](../RequirementsSpecification.md#fr5-calendar-view) Calendar View
-- PB-03 Class Creation
-- PB-04 Scheduling
-- PB-09 Due Dates
+- [PB-03](../RequirementsSpecification.md#fr3-class-creation) Class Creation
+- [PB-04](../RequirementsSpecification.md#fr4-scheduling) Scheduling
+- [PB-09](../UserStories/UserStories.md#us-06-schedule-due-dates) Due Dates
 ## Task and Subtasks
 ### Start Project - Calendar View
 ### Start Functionality
